@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'article-app';
+
+  isShow: boolean = true;
+
+  onClick() {
+    this.isShow = !this.isShow;
+  }
 }

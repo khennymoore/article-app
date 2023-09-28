@@ -1,0 +1,88 @@
+.wrapper {
+    background: hsl(210, 46%, 95%);
+    height: 100vh;
+    display: grid;
+    place-content: center;
+  }
+  .my-container{
+    height: 20rem;
+    max-width: 50rem;
+    background: white;
+    display: flex;
+    border-radius: 15px;
+    padding: 0;
+  }
+  
+  .article {
+    flex: 2;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    padding: 30px;
+  }
+  .borderad {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    flex: 1.4;
+  }
+  
+  .box  {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 3.5rem;
+    margin-top: 20px;
+  }
+  
+  .profile-pic {
+    max-width: 3rem;
+  }
+  
+  .btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(210, 46%, 95%);
+    margin-left: 100px;
+    max-width: 2rem;
+    height: 2rem;
+  }
+  
+  .btn:hover {
+    background-color: hsl(217, 19%, 35%);
+  
+  }
+  
+  .btn:active {
+    color: white;
+    background-color: hsl(217, 19%, 35%);
+  }
+  
+  .btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+  
+  .box2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 19rem;
+    right: 13rem;
+    padding: 15px;
+    max-width: 13rem;
+    background: hsl(217, 19%, 35%);
+    border-radius: 15px;
+  
+  }
+  
+  .box2::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: hsl(217, 19%, 35%) transparent transparent transparent;
+  }
